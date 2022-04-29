@@ -1,0 +1,539 @@
+/* Reset CSS */
+*{
+    max-width: 1919.2px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+
+/* 
+1. Từ ngoài bào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết
+*/
+/* 
+1. Vị trí
+2. kích thước
+3. Màu sắc
+4. kiểu dáng
+
+*/
+body{
+    max-width: 100%;
+}
+.text-white{
+    color: #fff;
+}
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.col{
+    float: left;
+
+padding: 0 8PX;
+}
+.col-two{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+#main {
+
+}
+/* Begin heading */
+#header {
+   
+    z-index: 1;
+height: 46px;
+background-color:#000;
+position: fixed;
+top: 0;
+left: 0;
+right: 0cm;
+}
+
+
+#nav {
+    display: inline-block;
+    list-style: none;
+}
+#nav li{
+    position: relative;
+}
+#nav >li{
+    display: inline-block;
+    
+}
+
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    
+    display: block;
+    
+}
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav li:hover>a{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#nav .subnav{
+display:none;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+background-color: #fff;
+list-style: none;
+position: absolute;
+top: 101%;
+left: 0;
+min-width: 160px;
+}
+#nav .subnav a{
+    line-height: 38px;
+    color: #000;
+}
+#nav .nav-arrow-down{
+font-size: 13px;
+}
+#header .search-btn{
+float: right;
+padding: 0 21px;
+}
+#header .menu-btn{
+    float: right;
+    padding: 0 21px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+   
+    }
+    #header .search-input {
+        /* background-color: #009688; */
+        float: right;
+        position: absolute;
+        display: none;
+        right: 61px;
+        top: 7px;
+        line-height: 30px;
+    }
+ .search-input .inputforSeach{
+        border-radius: 8px;
+        height: 25px;
+        width: 220px;
+    }
+
+    #header .menu-btn:hover{
+        background-color: #ccc;
+     color: #000;
+    }
+    #header .menu-btn:hover .menu-icon{
+       
+     color: #000;
+    }
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 17px;
+    line-height: 46px;
+    
+}
+#header .menu-icon{
+    color: #fff;
+    font-size: 17px;
+    line-height: 46px;
+    
+}
+/* End heading */
+
+/* Begin Siler */
+#slider {
+max-width:100% ;
+    position: relative;
+  
+margin-top: 46px;
+padding-top: 45%;
+
+background: url(/asset/img/101.jpg) top center / cover no-repeat;
+clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 85%, 85% 100%, 17% 100%, 0 87%, 0 0);
+}
+#slider .text-content{
+    position: absolute;
+  bottom: 47px;
+  width: 100%;
+  text-align: center;
+  color: rgb(58, 12, 12);
+}
+
+#slider .text-heading{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#slider .text-description{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+/* End slider */
+
+/* Begin content */
+#content {
+
+   
+
+}
+   /* About text */
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+   padding-right: 16px;
+padding-left: 16px;
+}
+#content .heading-content{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#content .subheading-content{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.6;
+}
+#content .member-list{
+margin-top: 48px;
+}
+#content .member-item{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    padding-bottom: 56px;
+}
+#content .member-name{
+    font-size: 14px;
+}
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+/* text tour */
+#content .tour{
+    background-color: #000;
+    min-height: 943.9px;
+}
+#content .list-tour{
+    background-color: #fff;
+    margin: 40px 0;
+}
+.list-tour li{
+    font-size: 15px;
+    padding: 14px 15px;
+    border-bottom:1px solid #ddd  ;
+    color: #757575;
+    list-style: none;
+    
+}
+.sold-out{
+    background-color: #f44336;
+    padding: 3px 5px;
+    margin: 0 16px;
+}
+.quantily{
+    background-color: #000;
+    float: right;
+    width: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+.place{
+    margin-right: -8px;
+margin-left: -8px;
+animation: modalfadein1 ease 3s;
+
+}
+.place .place-tada{
+width: 33.33333%;
+
+float: left;
+
+padding: 0 8PX;
+
+}
+
+.place-body{
+    background-color: #fff;
+    margin-top: -4px;
+}
+.place-body .address{
+  
+    font-size: 15px;
+    font-weight: 600;
+    padding: 18px 18px;
+}
+.place-body .date{
+    font-size: 14px;
+    margin: 5px 18px 14px;
+    opacity: 0.7;
+}
+.place-body .text-ghichu{
+    font-size: 14px;
+    margin: 5px 18px 14px;
+   font-weight: 600;
+   line-height: 16px;
+}
+.place .place-img{
+    width:100%;   
+
+}
+
+.place .place-img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.place-body .btn-buy{
+    width: 70px;
+    background-color: black;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+  margin: 5px 18px 18px;
+
+
+}
+.place-body .btn-buy:hover{
+    background-color: #ccc;
+    color: #000;
+}
+/* contact */
+.contact{
+    padding-top: 50px;
+   
+}
+.contact .left-contact{
+    font-size: 18xp;
+    line-height: 1.5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.contact .right-contact{
+    
+   font-size: 15px;
+}
+.formcontrol {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    
+}
+.send {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid;
+    padding: 10px 16px;
+    float: right;
+}
+.send:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.left-contact i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.map{
+    display: none;
+    padding-top: 56.279382135%;
+    background: url(/asset/img/map.jpg) top center / cover no-repeat;
+}
+#footer {
+    padding: 64px 16px ;
+text-align: center;
+opacity: 0.7;
+}
+.icon{
+    
+}
+.icon a{ 
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+
+opacity: 0.7;
+
+
+}
+.click-text{
+    color: #000;
+    
+}
+.text-icon{
+margin: 15px;
+line-height: 1.5;
+color: #000;
+font-size: 15px;
+
+}
+.icon a:hover{
+    opacity: 1;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.modal .container{
+    max-width: calc(100% - 32px);
+    position: relative;
+width: 900px;
+
+min-height: 300px;
+background-color: #fff;
+display: block;
+animation: modalfadein ease 0.4s;
+}
+
+.body-sticket{
+   
+    padding: 16px;
+}
+
+.container .close{
+    position:absolute;
+    right: 0;
+    top:0;
+    padding: 8px;
+    opacity: 0.7;
+}
+.container .close:hover{
+    opacity: 1;
+}
+.spacing{
+    padding-right: 10px;
+}
+.container .modal-header{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    background-color: #009688;
+    padding: 30px;
+}
+.lable-sticker{
+font-size:20px ;
+display: block;
+
+font-weight: 600;;
+
+
+}
+.sticket-input{
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border:solid 1px #ccc;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+.tada11{
+    padding-right: 5px;
+}
+.evaluate{
+    border: none;
+    background-color: #009688;
+    width: 100%;
+    color: #fff;
+    padding: 13px;
+    opacity: 1;
+}
+
+.evaluate:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    
+}
+.footer-ticket{
+    float: right;
+    padding-bottom: 22px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+.tada{
+    color: teal;
+}
+.open{
+    display: flex;
+}
+
+@keyframes modalfadein{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes modalfadein1{
+    from{
+        transform: translateX(-600px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
